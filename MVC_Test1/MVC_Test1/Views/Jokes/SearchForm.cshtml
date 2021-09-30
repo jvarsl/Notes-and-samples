@@ -1,0 +1,30 @@
+﻿@model MVC_Test1.Models.ViewJokeAndSearch
+
+<p>
+    <a><b>Search phrase: </b> @Model.SearchPhrase </a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Jokes.FirstOrDefault().Question)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Jokes.FirstOrDefault().Answer)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Jokes) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Question)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Answer)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,16 @@
+Nuget Microsoft.AspNet.WebApi.Client
+If using custom names in model package System.Runtime.Serialization.Primitives
+
+Initialize:
+  var ApiClient = new HttpClient();
+  ApiClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+Usage:
+To get response
+using (var responseMessage = await ApiHelper.ApiClient.GetAsync(GetUrl()))
+then              
+if (responseMessage.IsSuccessStatusCode){
+var model = await responseMessage.Content.ReadAsAsync<YOUR_MODEL>(); }
+
+Custom mapping:
+annotate class as [DataContract], then properties that should get mapped mark as [DataMember], to give custom naming [DataMember(Name "NAME_IN_JSON")]

@@ -1,0 +1,32 @@
+cw tab - console writeline
+prop tab - property
+ctrl + . pazymejus klase - leidzia rinktis kad sukurtu .cs failiuka ir perkeltu klase
+ctrl + . - parasius nezinoma dalyka galima kad auto padarytu using *
+ctor tab - sukurta konstruktoriu klases
+ctrl e c - comment out marked stuff
+ctrl e u - remove commented part
+In Visual Studio, the shortcut for Code Formatting is Ctrl+k Ctrl+D
+
+
+
+ absoluteExpireTime ?? TimeSpan.FromSeconds(60); //below explanation
+ //if absoluteExpireTime is null then TimeSpan.FromSeconds(60) esle absoluteExpireTime
+
+run from shell:
+dotnet run
+	watch mode: dotnet watch --quiet run.
+		Note: The --quiet flag is used here to suppress mesages from the watch framework.
+
+
+
+ // We can ignore the rest of the current iteration using "continue;"
+ 
+ 
+ GENERAL TIPS:
+ ctrl+shift+X does the copy line
+ ctrl+delete/backspace deletes whole word
+Ctrl + L will cut the line. Ctrl + Shift + L will delete the line
+ 
+ 
+ Code Formatting Shortcut:
+Visual Studio Code on Windows - Shift + Alt + F

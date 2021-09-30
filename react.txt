@@ -1,0 +1,27 @@
+React - SPA (single page app) for UI, mixture of JS and HTML to make JSX.
+In div with elemendId "root" we render our App.js.
+React consists from components, they're created as JS functions:
+ function App() { return (<> JSX type text </>); }
+
+States are immutable in React (means it cannot change, new one is created and placed instead)
+  import {useState} from 'react'
+  const [tasks, setTasks] = useState([{text:'test', id:1}]);
+  to add new tasks: setTasks([...tasks, {text:'test2', id:2})
+
+To use APIs from different sources CORS have to be enabled on the server for the front end.
+  ASP.NET: Nugget Microsoft.AspNet.WebApi.Cors
+  API Controller: class marked as [EnableCors("*","*","*")] to allow from all sources
+  In WepApi config add - config.EnableCors();
+
+From C# to return json acceptable capitalization use Newonsoft
+        [JsonProperty(PropertyName = "id")]
+        public int Id { get; set; }
+
+Greitas sukurimas per console (turi node.js būti (npm --version))
+  npx create-react-app FOLDER-TO-CREATE
+  cd FOLDER_TO_CREATE
+  code . (open project in VS code)
+
+VS code:
+  Ctrl+` to open terminal
+  npm start (to start the server)

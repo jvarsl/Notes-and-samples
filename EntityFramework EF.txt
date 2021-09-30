@@ -1,0 +1,33 @@
+Adding SQLite
+
+Nuget packages -> download EF and EF SQLite
+
+Data folder -> create AppContext:
+   public class AppContext: DbContext
+    {
+        public AppContext(DbContextOptions<AppContext> options) 
+            : base(options)
+        {
+
+        }
+}
+
+appsettings.json add :
+  "ConnectionStrings": {
+    "DefaultConnection": "DataSource=app.db"
+  }
+
+In startup.cs ConfigureServices add:
+            services.AddDbContext<JokeContext>(options => options.UseSqlite(
+                Configuration.GetConnectionString("DefaultConnection")));
+
+Create some package on created model. It will get added to the context.
+Then on "Package manager console" https://docs.microsoft.com/en-us/ef/core/managing-schemas/migrations/?tabs=vs (VS version commands)
+
+__________________________________________________
+
+EF 6 (ne core), su identity kuriant susikure, po to per console:
+
+add-migrations (folderis Migrations su Configuration kalse)
+add-migration "init"
+update-database (to run the latest migration)

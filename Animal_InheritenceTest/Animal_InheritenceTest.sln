@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animal_InheritenceTest", "Animal_InheritenceTest\Animal_InheritenceTest.csproj", "{2177A253-FF3A-4EE1-8A97-61CCB166E72E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "v1study_ZooManagmentTask", "v1study_ZooManagmentTask\v1study_ZooManagmentTask.csproj", "{5F25BE13-37BF-47B5-AA09-6D33664E3019}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2177A253-FF3A-4EE1-8A97-61CCB166E72E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2177A253-FF3A-4EE1-8A97-61CCB166E72E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2177A253-FF3A-4EE1-8A97-61CCB166E72E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2177A253-FF3A-4EE1-8A97-61CCB166E72E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F25BE13-37BF-47B5-AA09-6D33664E3019}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F25BE13-37BF-47B5-AA09-6D33664E3019}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F25BE13-37BF-47B5-AA09-6D33664E3019}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F25BE13-37BF-47B5-AA09-6D33664E3019}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61814651-4A6D-4084-A87D-FA80F45D0E99}
+	EndGlobalSection
+EndGlobal
