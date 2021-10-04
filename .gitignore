@@ -263,3 +263,5 @@ __pycache__/
 
 # Cake - Uncomment if you are using it
 # tools/
+ASPNET_MVC_Framework_EntityCRUD_2/ASPNET_MVC_Framework_EntityCRUD_2/App_Data/aspnet-ASPNET_MVC_Framework_EntityCRUD_2-20210921062239.mdf
+ASPNET_MVC_Framework_EntityCRUD_2/ASPNET_MVC_Framework_EntityCRUD_2/App_Data/aspnet-ASPNET_MVC_Framework_EntityCRUD_2-20210921062239_log.ldf

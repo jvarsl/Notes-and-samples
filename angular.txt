@@ -1,0 +1,24 @@
+Angular is app design framework for SPAs.
+
+install Angular globally: npm i -g @angular/cli
+
+create new project: ng new FOLDER_NAME
+run server: ng serve   (runs on http://localhost:4200/)
+
+{{ class components or javascript syntax }} - string interpolation 
+
+Create component:
+ ng generate component components/header
+
+@Input() text!: string; <-- @Input() means input is getting passed via html (ex. text="Add"). in text! the ! tells to ignore strict initializer (text isn't initialized), : string is typescript control. Though text? would make it optional.
+
+[] - Directives are usually marked as this
+
+(click)="onClick()" - (click) is an event, onClick() is method
+
+import {TASKS} from '../../mock-tasks' <-- .. goes down level, . goes up
+
+Async/await is done with Observables, it's a promise which we subscribe to and get needed output. HTTP Client returns Observables by default.
+
+VS code: 
+  To format: Shift + Alt + F
