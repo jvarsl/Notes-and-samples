@@ -20,5 +20,12 @@ import {TASKS} from '../../mock-tasks' <-- .. goes down level, . goes up
 
 Async/await is done with Observables, it's a promise which we subscribe to and get needed output. HTTP Client returns Observables by default.
 
+Two way binding (form to ts)
+   <input type="text" name="text" [(ngModel)]="text" id="text" />
+
+DI services:
+ import { UiService } from 'src/app/services/ui.service';
+to use it in constructor we: constructor(private uiService: UiService) { }
+
 VS code: 
   To format: Shift + Alt + F
